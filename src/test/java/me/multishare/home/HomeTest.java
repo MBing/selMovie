@@ -23,13 +23,13 @@ public class HomeTest {
     @AfterEach
     public void cleanUp() {
         driver.close();
-    }
-
-    @AfterAll
-    public void tearDown() {
         driver.quit();
     }
 
+//    @AfterAll
+//    public void tearDown() {
+//        driver.quit();
+//    }
 
     @Test
     public void HomeSearchTest () {
@@ -41,6 +41,4 @@ public class HomeTest {
 
         Assertions.assertTrue(altText.contains("Hello"));
     }
-
-
 }
